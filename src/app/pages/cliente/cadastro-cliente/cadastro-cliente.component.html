@@ -1,0 +1,62 @@
+<div class="centro">
+    <div class="background-circles">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+    <div class="flex">
+                <form [formGroup]="form" fxLayout="column">
+                    <div fxFlex class="flex"> 
+                        <app-card-texto> 
+                            <mat-form-field >
+                                <input matInput readonly placeholder="Código" formControlName="id">
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput placeholder="Nome" formControlName="nome">
+                            </mat-form-field>
+                            <div fxLayout="row" fxLayoutGap="16px">
+                                <mat-form-field fxFlex>
+                                <input matInput placeholder="CPF" mask="000.000.000-00" formControlName="cpf" maxlength="14" >
+                            </mat-form-field>
+                            
+                            <mat-form-field fxFlex>
+                                <input matInput placeholder="Telefone (Whatsapp)" mask="(00) 00000-0000" formControlName="telefone" maxlength="15">
+                            </mat-form-field>
+                        </div>  
+                    </app-card-texto>
+                    
+                    <app-card-texto> 
+                        <div fxLayout="row" fxLayoutGap="16px">
+                            Localização
+                            <br> <br>
+                            <mat-form-field fxFlex>
+                                <input matInput placeholder="Cidade" formControlName="cidade">
+                            </mat-form-field>
+                            <mat-form-field fxFlex>
+                                <input matInput placeholder="Estado (Sigla)" formControlName="estado" maxlength="2">
+                            </mat-form-field>
+                            
+                            <mat-form-field fxFlex>
+                                <input matInput placeholder="Endereço" formControlName="endereco">
+                            </mat-form-field>
+                        </div>
+                        <br> <br> 
+                    </app-card-texto>
+                    
+                    
+                </div>
+                </form>
+                <div class="barra-fixa"></div>
+            </div>
+            <div class="flex">
+                <mat-card-actions fxLayoutGap="16px">
+                    <button class="custom-button" (click)="voltar()">
+                        <mat-icon>arrow_back</mat-icon>
+                    </button>
+                    <button class="custom-button" (click)="salvar()">
+                        <mat-icon>save</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </div>
+            
+</div>

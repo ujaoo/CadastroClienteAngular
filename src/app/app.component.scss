@@ -1,0 +1,21 @@
+.custom-toolbar {
+    background-color: rgb(227, 27, 27); 
+    color: white; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .home-icon {
+    text-decoration: none; 
+    color: white; 
+  }
+  
+  .spacer {
+    flex: 1; 
+  }
+  
+  mat-icon {
+    font-size: 10px; 
+  }
+  
